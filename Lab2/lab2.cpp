@@ -11,4 +11,6 @@ int main()
        "If user is correct they win"
        "If user is incorrect the computer tells them if the number is higher or lower than their selection"
        "Repeat until user is correct" */
+       
+       return 0;
 }

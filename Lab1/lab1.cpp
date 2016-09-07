@@ -27,4 +27,6 @@ int main ()
     cout <<"   xx    xx  "<< endl;
     cout <<"    xx  xx   "<< endl;
     cout <<"      xx     "<< endl;
+    
+    return 0;
     }

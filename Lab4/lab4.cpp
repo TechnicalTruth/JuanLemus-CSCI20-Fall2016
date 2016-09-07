@@ -29,6 +29,5 @@ int main()
     cout << "The professor is willing to help if " << userName << " will do " << numHours << " hours of clown school." << endl;
     cout << "In addition to that, " << userName << "'s professor wants him to wear a " << genNoun <<" on his head for the rest of the semester." << endl;
     
-    return 0;
     
 }
