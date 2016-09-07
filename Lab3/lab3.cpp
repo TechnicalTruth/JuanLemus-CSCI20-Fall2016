@@ -2,6 +2,7 @@
 // Date Created: 8/31/16
 //CSCI 20
 //Browne
+//Date finished: 9/6/16
 
 #include <iostream>
 using namespace std;
@@ -46,4 +47,5 @@ int main ()
     cout << cashBack << endl;
     
     return 0;
+    
 }
