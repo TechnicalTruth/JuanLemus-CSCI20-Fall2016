@@ -8,56 +8,65 @@ using namespace std;
  
  struct Monster {
         
-        string Name;
-        string Head;
-        string Eyes;
-        string Ears;
-        string Nose;
-        string Mouth;
+        string name;
+        string head;
+        string eyes;
+        string ears;
+        string nose;
+        string mouth;
         
-    }Monsterone, monstertwo, monsterthree, monsterfour 
+    };
     
-int main () {
+    int main ()
+    {
+     Monster monsterOne;
+ 
     cout << "Choose name for your monster: ";
-    cin >> monsterone.name;
+    cin >> monsterOne.name;
     cout << "Choose head type for your monster: ";
-    cin >> monsterone.head;
+    cin >> monsterOne.head;
     cout << "Choose eye type for your monster: ";
-    cin >> monsterone.eyes;
+    cin >> monsterOne.eyes;
     cout <<"Choose what kind of ears your monster has: ";
-    cin >> monsterone.ears;
+    cin >> monsterOne.ears;
     cout << "Choose nose type for your monster: ";
-    cin >> monsterone.nose;
+    cin >> monsterOne.nose;
     cout << "Choose mouth type for your monster: ";
-    cin >> monsterone.mouth;
-    cout << "Monster name: " << monsterone.name << " Head type: " << monsterone.head << " Eye type: " << monsterone.eyes << " Nose type: " << monsterone.nose << " Mouth type: " << monsterone.mouth << endl;
+    cin >> monsterOne.mouth;
+    cout << "Monster name: " << monsterOne.name << " Head type: " << monsterOne.head << " Eye type: " << monsterOne.eyes << " Nose type: " << monsterOne.nose << " Mouth type: " << monsterOne.mouth << endl;
     
-    monstertwo.name = "Craig";
-    monstertwo.head = "Sombra";
-    monstertwo.eyes = "Focused";
-    monstertwo.ears = "Floppy";
-    monstertwo.nose = "triangular";
-    monstertwo.mouth = "Holy";
+    Monster monsterTwo;
     
-    cout << "Monster name: " << monstertwo.name << " Head type: " << monstertwo.head << " Eye type: " << monstertwo.eyes << " Nose type: " << monstertwo.nose << " Mouth type: " << monstertwo.mouth << endl;
+    monsterTwo.name = "Craig";
+    monsterTwo.head = "Sombra";
+    monsterTwo.eyes = "Focused";
+    monsterTwo.ears = "Floppy";
+    monsterTwo.nose = "triangular";
+    monsterTwo.mouth = "Holy";
     
-    monsterthree.name = "Paul";
-    monsterthree.head = "Zombus";
-    monsterthree.eyes = "Dreamy";
-    monsterthree.ears = "Riggid";
-    monsterthree.nose = "Rotten";
-    monsterthree.mouth = "Wackus";
+    cout << "Monster name: " << monsterTwo.name << " Head type: " << monsterTwo.head << " Eye type: " << monsterTwo.eyes << " Nose type: " << monsterTwo.nose << " Mouth type: " << monsterTwo.mouth << endl;
     
-    cout << "Monster name: " << monsterthree.name << " Head type: " << monsterthree.head << " Eye type: " << monsterthree.eyes << " Nose type: " << monsterthree.nose << " Mouth type: " << monsterthree.mouth << endl;
+    Monster monsterThree;
     
-    monsterfour.name = "Greg";
-    monsterfour.head = "Frankensteinish";
-    monsterfour.eyes = "Spritem";
-    monsterfour.ears = "Triangular";
-    monsterfour.nose = "None";
-    monsterfour.mouth = "Wackus";
+    monsterThree.name = "Paul";
+    monsterThree.head = "Zombus";
+    monsterThree.eyes = "Dreamy";
+    monsterThree.ears = "Riggid";
+    monsterThree.nose = "Rotten";
+    monsterThree.mouth = "Wackus";
     
-     cout << "Monster name: " << monsterfour.name << " Head type: " << monsterfour.head << " Eye type: " << monsterfour.eyes << " Nose type: " << monsterfour.nose << " Mouth type: " << monsterfour.mouth << endl;
+    cout << "Monster name: " << monsterThree.name << " Head type: " << monsterThree.head << " Eye type: " << monsterThree.eyes << " Nose type: " << monsterThree.nose << " Mouth type: " << monsterThree.mouth << endl;
+    
+    Monster monsterFour;
+    
+    monsterFour.name = "Greg";
+    monsterFour.head = "Frankensteinish";
+    monsterFour.eyes = "Spritem";
+    monsterFour.ears = "Triangular";
+    monsterFour.nose = "None";
+    monsterFour.mouth = "Wackus";
+    
+    cout << "Monster name: " << monsterFour.name << " Head type: " << monsterFour.head << " Eye type: " << monsterFour.eyes << " Nose type: " << monsterFour.nose << " Mouth type: " << monsterFour.mouth << endl;
      
      return 0;
 }
