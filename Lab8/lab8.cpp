@@ -22,9 +22,7 @@ void toPounds (float numKilos, float numPounds)
 
 int main()
 {
-    float numPounds = 0;
-    float numKilos = 0;
-    
-    toPounds (2);
-    toKilos (10);
+
+    toPounds (0,0);
+    toKilos (0,0);
 }
