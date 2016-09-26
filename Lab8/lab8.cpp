@@ -8,6 +8,8 @@ using namespace std;
 
 void toKilos (float numPounds, float numKilos)
 {
+    cout << "Enter weight in Pounds: ";
+    cin >> numPounds;
     numKilos = numPounds * (1/2.2);
     
     cout << "Kilos: " << numKilos << endl;
@@ -15,6 +17,8 @@ void toKilos (float numPounds, float numKilos)
 
 void toPounds (float numKilos, float numPounds)
 {
+    cout << "Enter weight in Kilos: ";
+    cin >> numKilos;
     numPounds = numKilos * 2.2;
     
     cout << "Pounds: " << numPounds << endl;
