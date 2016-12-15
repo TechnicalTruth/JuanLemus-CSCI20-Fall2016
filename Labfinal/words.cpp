@@ -15,7 +15,7 @@ using std :: vector;
 
 int main(){
     
-    words mywords;                                              
+    words mywords;                                                              //object 'mywords' created from class words
 
     mywords.addWords();                                         
     
@@ -37,15 +37,16 @@ int main(){
 
 void words :: addWords(){
     
-     ifstream inf;                                      
+     ifstream inf;                                                              //input file stream varaible inf
     
     inf.open("words.txt");                                      
     
     string word;                                                
     
     
-    while( inf >> word)                                            
-         myWords.push_back(word);                               
+    while( inf >> word)  
+    
+         myWords.push_back(word);                                               //pushes all words from words.txt file into myWords Vector
    
     inf.close();                                                
     
@@ -68,30 +69,32 @@ void words :: lookUp (string target){
             if((Target[0] == Word[0] && Target[1] == Word[1]) && len == 2){
                
                 found = true;
-                //cout << Word << endl;
+                
             }
            else if((Target[0] == Word[0] && (Target[1] == Word[1]) && Target[2] == Word[2]) && len == 3){
                 
                 found = true;
-                //cout << Word << endl;
+                
             }
            else if ((Target[0] == Word[0] && Target[1] == Word[1]) && (Target[2] == Word[2] && Target[3] == Word[3]) && len == 4){
+               
                 found = true;
-                //cout << Word << endl;
+                
             }
            else if ((Target[0] == Word[0] && Target[1] == Word[1]) && (Target[2] == Word[2] && Target[3] == Word[3]) &&  Target[4] == Word[4] && len == 5){
                 
                 found = true;
-                //cout << Word << endl;
             }
             else{
                 found = false;
-            
             }
+            
             bool print = true;
+            
             if(found == true){
                 
                 for(int i = 0; i < repeats.size(); ++i){
+                    
                     if(repeats[i] != word){
                         print = true;
                        
@@ -103,6 +106,7 @@ void words :: lookUp (string target){
                 }
                     if(print == true){
                         repeats.push_back(word);
+                        
                         cout << word << endl;
                     }
                 
