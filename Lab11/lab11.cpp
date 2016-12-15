@@ -26,7 +26,12 @@ class EstimatedIncomeTax{
 
 
 int main(){
-
+    
+    double userWage = 0.0;
+    double userTips = 0.0;
+    double taxWitheld = 0.0;
+    double taxAGI = 0.0;
+    double adjGrossIncome = 0.0;
     
     cout << "Name: ";
     
