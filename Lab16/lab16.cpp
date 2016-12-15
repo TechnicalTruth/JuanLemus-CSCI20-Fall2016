@@ -13,7 +13,7 @@ int main()
     double cart = 0;
     for(int i = 0; i < 10;++i){
        
-        //menuItem[0][i] = 0;
+        
     }
     for(int i = 0; i < 20;i++){
         if(i < 10)
@@ -32,25 +32,35 @@ int main()
     menuItem [7] = "Raspberry";
     menuItem [8] = "Blueberry";
     menuItem [9] = "Blackberry";
+    
     for(int i = 0; i < 10;++i)
+        
         cout << i+1 << ") " << menuItem[i] << endl;
-    cout << "Choose product (1-10)"<< endl;
-    while(cin>>menuItemDef ){
+        cout << "Choose product (1-10)"<< endl;
+    
+    while(cin >> menuItemDef){
         
         price_stock[1][menuItemDef-1] -=1;
+        
         if(price_stock[1][menuItemDef-1] >0 ){
             
             cout << menuItem[menuItemDef-1] << " costs $" << price_stock[0][menuItemDef-1]<< " with " << price_stock[1][menuItemDef-1] << " left" << endl;
+            
             int num = numItem[menuItemDef-1];
             cart += price_stock[0][menuItemDef-1];
             ++num;
+            
+            
             menuItem[menuItemDef-1] = num;
         }
         else
             cout << "No more left in stock" << endl;
-        cout << "Do you want to continue?(y/n): ";
+            cout << "Do you want to continue?(y/n): ";
+        
         char answer;
+        
         cin >> answer;
+        
         if(answer == 'n')
             break;
         

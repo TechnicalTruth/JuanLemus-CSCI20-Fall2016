@@ -13,7 +13,7 @@ int main()
     for(int i = 0; i < 10;++i){
         numItem[i] = 0;
     }
-    menuItem [0] = "Apple";
+    menuItem [0] = "Apple";             //Menu created within array
     menuItem [1] = "Bannana";
     menuItem [2] = "Orange";
     menuItem [3] = "Pineapple";
@@ -24,28 +24,36 @@ int main()
     menuItem [8] = "Blueberry";
     menuItem [9] = "Blackberry";
     for(int i = 0; i < 10;++i)
-        cout << i+1 << ") " << menuItem[i] << endl;
-    cout << "Choose product (1-10)"<< endl;
-    while(cin>>menuItemDef ){
-        
-       
-       
+    
+        cout << i+1 << ") " << menuItem[i] << endl;     //print menu for users to see
+        cout << "Choose product (1-10)"<< endl;
+    
+    while(cin >> menuItemDef ){                         //while loop for every user entry
         
         cout << menuItem[menuItemDef-1] << endl;
-        int num = numItem[menuItemDef-1];
+        
+    int num = numItem[menuItemDef-1];                   //keeps track of stock of products chosen by user
+    
         ++num;
+    
         numItem[menuItemDef-1] = num;
+    
+    
+    
         cout << "Do you want to continue?(y/n): ";
-        char answer;
+        char answer;                                    //allows user to quit inside of interface
+    
         cin >> answer;
-        if(answer == 'n')
+    
+        if(answer == 'n')                               //if statement to verify answer from previous statement
+    
             break;
         
-        
     }
-    for(int i = 0; i < 10; ++i){
-        cout << menuItem[i] << ": " << numItem[i] << endl;
     
+    for(int i = 0; i < 10; ++i){
+    
+        cout << menuItem[i] << ": " << numItem[i] << endl;
     }
     
     return 0;
